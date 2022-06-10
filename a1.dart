@@ -117,21 +117,29 @@
 // }
 
 //switch case
-void main() {
-  var vehicle = 'scooter';
+// void main() {
+//   var vehicle = 'scooter';
+//
+//   switch (vehicle) {
+//     case 'car':
+//       print("car");
+//       break;
+//     case 'truck':
+//       print("truck");
+//       break;
+//     case 'bike':
+//       print("bike");
+//       break;
+//     default:
+//       print("Not valid");
+//       break;
+//   }
+// }
 
-  switch (vehicle) {
-    case 'car':
-      print("car");
-      break;
-    case 'truck':
-      print("truck");
-      break;
-    case 'bike':
-      print("bike");
-      break;
-    default:
-      print("Not valid");
-      break;
-  }
+//condition expression
+void main() {
+  var a = 3, b = 5;
+
+  var temp = a ?? b;
+  print(temp);
 }
