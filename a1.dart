@@ -23,13 +23,24 @@
 // }
 
 //using dynamic keyword
+// void main() {
+//   dynamic a = 10;
+//   print(a.runtimeType);
+//   a = 3.5;
+//   print(a.runtimeType);
+//   a = 'Bhargav';
+//   print(a.runtimeType);
+//   a = true;
+//   print(a.runtimeType);
+// }
+
+//difference between var keyword and dynamic keyword
 void main() {
-  dynamic a = 10;
-  print(a.runtimeType);
-  a = 3.5;
-  print(a.runtimeType);
-  a = 'Bhargav';
-  print(a.runtimeType);
-  a = true;
-  print(a.runtimeType);
+  var a = 10;
+  a = 20;
+
+  dynamic b = 20;
+  print(b);
+  b = 'Bhargav';
+  print(b);
 }
