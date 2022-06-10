@@ -188,20 +188,37 @@
 
 //Lexical Closures
 
-var a = 0;
+// var a = 0;
+// void main() {
+//   print('Main fun = $a');
+//
+//   void outer() {
+//     a = 5;
+//     print('Outer fun = $a');
+//   }
+//
+//   outer();
+//   demo();
+// }
+//
+// void demo() {
+//   a = 20;
+//   print('Demo fun = $a');
+// }
+
+//Throw keyword
 void main() {
-  print('Main fun = $a');
-
-  void outer() {
-    a = 5;
-    print('Outer fun = $a');
+  try {
+    noCheck(1234);
+  } catch (e) {
+    print('Enter a 5 digit number.');
   }
-
-  outer();
-  demo();
 }
 
-void demo() {
-  a = 20;
-  print('Demo fun = $a');
+void noCheck(var n) {
+  if (n.toString().length == 5) {
+    print('Valid number....');
+  } else {
+    throw FormatException();
+  }
 }
