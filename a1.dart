@@ -137,9 +137,18 @@
 // }
 
 //condition expression
-void main() {
-  var a = 3, b = 5;
+// void main() {
+//   var a = 3, b = 5;
+//
+//   var temp = a ?? b;
+//   print(temp);
+// }
 
-  var temp = a ?? b;
-  print(temp);
+//type test operator
+
+void main() {
+  var a = 10;
+
+  print('is Operator= ${a is int}');
+  print('is! Operator= ${a is! int}');
 }
