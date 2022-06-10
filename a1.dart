@@ -35,12 +35,21 @@
 // }
 
 //difference between var keyword and dynamic keyword
-void main() {
-  var a = 10;
-  a = 20;
+// void main() {
+//   var a = 10;
+//   a = 20;
+//
+//   dynamic b = 20;
+//   print(b);
+//   b = 'Bhargav';
+//   print(b);
+// }
 
-  dynamic b = 20;
-  print(b);
-  b = 'Bhargav';
+//final and const keyword
+void main() {
+  final a = 50;
+  print(a);
+
+  const b = 'Bhargav';
   print(b);
 }
