@@ -71,12 +71,29 @@
 // }
 
 //for loop
+// void main() {
+//   for (var i = 0; i < 6; i++) {
+//     print("The value of i= $i");
+//     for (var j = 0; j < 4; j++) {
+//       print("j= $j");
+//     }
+//     print("");
+//   }
+// }
+
+//Difference between while loop and do while
 void main() {
-  for (var i = 0; i < 6; i++) {
-    print("The value of i= $i");
-    for (var j = 0; j < 4; j++) {
-      print("j= $j");
-    }
-    print("");
+  print("While Loop:-");
+  var i = 100;
+  while (i < 100) {
+    print("Hello");
+    i++;
   }
+
+  print("do-while Loop:-");
+  var j = 200;
+  do {
+    print("Hello");
+    j++;
+  } while (j < 200);
 }
