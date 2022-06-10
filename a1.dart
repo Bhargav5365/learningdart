@@ -177,11 +177,31 @@
 // }
 
 //required parameter
+// void main() {
+//   stud('Bhargav', 14);
+// }
+//
+// void stud(String name, int roll) {
+//   print(name);
+//   print(roll);
+// }
+
+//Lexical Closures
+
+var a = 0;
 void main() {
-  stud('Bhargav', 14);
+  print('Main fun = $a');
+
+  void outer() {
+    a = 5;
+    print('Outer fun = $a');
+  }
+
+  outer();
+  demo();
 }
 
-void stud(String name, int roll) {
-  print(name);
-  print(roll);
+void demo() {
+  a = 20;
+  print('Demo fun = $a');
 }
