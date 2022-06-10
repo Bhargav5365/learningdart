@@ -82,18 +82,36 @@
 // }
 
 //Difference between while loop and do while
-void main() {
-  print("While Loop:-");
-  var i = 100;
-  while (i < 100) {
-    print("Hello");
-    i++;
-  }
+// void main() {
+//   print("While Loop:-");
+//   var i = 100;
+//   while (i < 100) {
+//     print("Hello");
+//     i++;
+//   }
+//
+//   print("do-while Loop:-");
+//   var j = 200;
+//   do {
+//     print("Hello");
+//     j++;
+//   } while (j < 200);
+// }
 
-  print("do-while Loop:-");
-  var j = 200;
-  do {
-    print("Hello");
-    j++;
-  } while (j < 200);
+//break and continue statment
+void main() {
+  for (var i = 0; i < 5; i++) {
+    if (i == 2) {
+      break;
+    }
+    print("i= $i");
+  }
+  print("");
+
+  for (var j = 0; j < 5; j++) {
+    if (j == 2) {
+      continue;
+    }
+    print("j= $j");
+  }
 }
