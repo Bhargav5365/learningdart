@@ -145,10 +145,22 @@
 // }
 
 //type test operator
+// void main() {
+//   var a = 10;
+//
+//   print('is Operator= ${a is int}');
+//   print('is! Operator= ${a is! int}');
+// }
 
-void main() {
-  var a = 10;
+//type of function
 
-  print('is Operator= ${a is int}');
-  print('is! Operator= ${a is! int}');
-}
+// no argument and with return type:
+// void main() {
+//   print(add());
+// }
+//
+// int add() {
+//   var a = 2, b = 4;
+//   var c = a + b;
+//   return c;
+// }
