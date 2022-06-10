@@ -46,10 +46,26 @@
 // }
 
 //final and const keyword
-void main() {
-  final a = 50;
-  print(a);
+// void main() {
+//   final a = 50;
+//   print(a);
+//
+//   const b = 'Bhargav';
+//   print(b);
+// }
 
-  const b = 'Bhargav';
-  print(b);
+//if else statment
+void main() {
+  int a = 100;
+  if (a < 10) {
+    print("Less than 10.");
+  } else if (a < 20) {
+    print("Less than 20.");
+  } else if (a < 30) {
+    print("Less than 30.");
+  } else if (a < 40) {
+    print("Less than 40.");
+  } else {
+    print("Not valid.");
+  }
 }
