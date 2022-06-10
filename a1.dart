@@ -99,19 +99,39 @@
 // }
 
 //break and continue statment
-void main() {
-  for (var i = 0; i < 5; i++) {
-    if (i == 2) {
-      break;
-    }
-    print("i= $i");
-  }
-  print("");
+// void main() {
+//   for (var i = 0; i < 5; i++) {
+//     if (i == 2) {
+//       break;
+//     }
+//     print("i= $i");
+//   }
+//   print("");
+//
+//   for (var j = 0; j < 5; j++) {
+//     if (j == 2) {
+//       continue;
+//     }
+//     print("j= $j");
+//   }
+// }
 
-  for (var j = 0; j < 5; j++) {
-    if (j == 2) {
-      continue;
-    }
-    print("j= $j");
+//switch case
+void main() {
+  var vehicle = 'scooter';
+
+  switch (vehicle) {
+    case 'car':
+      print("car");
+      break;
+    case 'truck':
+      print("truck");
+      break;
+    case 'bike':
+      print("bike");
+      break;
+    default:
+      print("Not valid");
+      break;
   }
 }
