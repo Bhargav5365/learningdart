@@ -12,9 +12,21 @@
 // }
 
 //using var
+// void main() {
+//   var a;
+//   a = 10;
+//   print(a.runtimeType);
+//   a = 'Bhargav';
+//   print(a.runtimeType);
+//   a = true;
+//   print(a.runtimeType);
+// }
+
+//using dynamic keyword
 void main() {
-  var a;
-  a = 10;
+  dynamic a = 10;
+  print(a.runtimeType);
+  a = 3.5;
   print(a.runtimeType);
   a = 'Bhargav';
   print(a.runtimeType);
