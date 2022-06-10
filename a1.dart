@@ -166,12 +166,22 @@
 // }
 
 // with argument and with return type:
+// void main() {
+//   print(add(10, 50));
+// }
+//
+// int add(var a, var b) {
+//   var a = 2, b = 4;
+//   var c = a + b;
+//   return c;
+// }
+
+//required parameter
 void main() {
-  print(add(10, 50));
+  stud('Bhargav', 14);
 }
 
-int add(var a, var b) {
-  var a = 2, b = 4;
-  var c = a + b;
-  return c;
+void stud(String name, int roll) {
+  print(name);
+  print(roll);
 }
