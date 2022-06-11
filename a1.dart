@@ -246,18 +246,49 @@
 // }
 
 //Use this keyword
-void main() {
-  var obj = A();
-  obj.display(100, 200);
+// void main() {
+//   var obj = A();
+//   obj.display(100, 200);
+// }
+//
+// class A {
+//   int x = 10;
+//   int y = 20;
+//
+//   void display(int x, int y) {
+//     x = this.x;
+//     y = this.y;
+//     print('x= $x \ny= $y');
+//   }
+// }
+
+// void main() {
+//   String text;
+//
+//   if (DateTime.now().hour < 12) {
+//     text = "It's morning! Let's make aloo paratha!";
+//   } else {
+//     text = "It's afternoon! Let's make chinese!";
+//   }
+//
+//   print(text);
+//   print(text.length);
+// }
+
+// lATE KEYWORD USING
+
+class Meal {
+  late String _description;
+
+  set description(String desc) {
+    _description = 'HELLO: $desc';
+  }
+
+  String get description => _description;
 }
 
-class A {
-  int x = 10;
-  int y = 20;
-
-  void display(int x, int y) {
-    x = this.x;
-    y = this.y;
-    print('x= $x \ny= $y');
-  }
+void main() {
+  final myMeal = Meal();
+  myMeal.description = 'HOW ARE YOU!';
+  print(myMeal.description);
 }
