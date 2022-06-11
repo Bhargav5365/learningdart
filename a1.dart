@@ -207,18 +207,57 @@
 // }
 
 //Throw keyword
+// void main() {
+//   try {
+//     noCheck(1234);
+//   } catch (e) {
+//     print('Enter a 5 digit number.');
+//   }
+// }
+//
+// void noCheck(var n) {
+//   if (n.toString().length == 5) {
+//     print('Valid number....');
+//   } else {
+//     throw FormatException();
+//   }
+// }
+
+//Super keyword
+// void main(){
+//   var obj=B();
+//   obj.super.display();
+// }
+// class A{
+//   var x=10;
+//
+//   void display(){
+//     print('Super class');
+//   }
+// }
+//
+// class B extend A{
+//   var x=20;
+//
+//   void display(){
+//     print(super.x);
+//     super.display();
+//   }
+// }
+
+//Use this keyword
 void main() {
-  try {
-    noCheck(1234);
-  } catch (e) {
-    print('Enter a 5 digit number.');
-  }
+  var obj = A();
+  obj.display(100, 200);
 }
 
-void noCheck(var n) {
-  if (n.toString().length == 5) {
-    print('Valid number....');
-  } else {
-    throw FormatException();
+class A {
+  int x = 10;
+  int y = 20;
+
+  void display(int x, int y) {
+    x = this.x;
+    y = this.y;
+    print('x= $x \ny= $y');
   }
 }
