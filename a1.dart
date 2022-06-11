@@ -277,18 +277,37 @@
 
 // lATE KEYWORD USING
 
-class Meal {
-  late String _description;
+// class Meal {
+//   late String _description;
+//
+//   set description(String desc) {
+//     _description = 'HELLO: $desc';
+//   }
+//
+//   String get description => _description;
+// }
+//
+// void main() {
+//   final myMeal = Meal();
+//   myMeal.description = 'HOW ARE YOU!';
+//   print(myMeal.description);
+// }
 
-  set description(String desc) {
-    _description = 'HELLO: $desc';
-  }
+// Late and lazy
 
-  String get description => _description;
+int _computeValue() {
+  print('In _computeValue...');
+  return 3;
+}
+
+class CachedValueProvider {
+  final _cache = _computeValue();
+  int get value => _cache;
 }
 
 void main() {
-  final myMeal = Meal();
-  myMeal.description = 'HOW ARE YOU!';
-  print(myMeal.description);
+  print('Calling constructor...');
+  var provider = CachedValueProvider();
+  print('Getting value...');
+  print('The value is ${provider.value}!');
 }
