@@ -313,10 +313,20 @@
 // }
 
 // Hypothetical unsound null safety:
-bad(String? maybeString) {
-  print(maybeString?.length);
+// bad(String? maybeString) {
+//   print(maybeString?.length);
+// }
+//
+// main() {
+//   bad(null);
+// }
+
+// Using null safety:
+requireStringNotObject(String definitelyString) {
+  print(definitelyString.length);
 }
 
 main() {
-  bad(null);
+  Object maybeString = 'it is';
+  requireStringNotObject(maybeString as String);
 }
