@@ -295,19 +295,28 @@
 
 // Late and lazy
 
-int _computeValue() {
-  print('In _computeValue...');
-  return 3;
+// int _computeValue() {
+//   print('In _computeValue...');
+//   return 3;
+// }
+//
+// class CachedValueProvider {
+//   final _cache = _computeValue();
+//   int get value => _cache;
+// }
+//
+// void main() {
+//   print('Calling constructor...');
+//   var provider = CachedValueProvider();
+//   print('Getting value...');
+//   print('The value is ${provider.value}!');
+// }
+
+// Hypothetical unsound null safety:
+bad(String? maybeString) {
+  print(maybeString?.length);
 }
 
-class CachedValueProvider {
-  final _cache = _computeValue();
-  int get value => _cache;
-}
-
-void main() {
-  print('Calling constructor...');
-  var provider = CachedValueProvider();
-  print('Getting value...');
-  print('The value is ${provider.value}!');
+main() {
+  bad(null);
 }
